@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- SEO NASLOV STRANICE ZA KATALOG -->
+    <title data-i18n="seo_title_katalog">Granfort Plovila Ponuda - Autonautica</title>
+
+    <!-- SEO OPIS STRANICE ZA KATALOG -->
+    <meta name="description" data-i18n="seo_desc_katalog:content" content="Istražite kompletnu ponudu Granfort sportskih krstaša. Pogledajte specifikacije i zatražite službenu ponudu za modele od 188 do 370 GTX.">
+
+
+    <!-- Google Fonts Učitavanje -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <!-- CSS Stilovi -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="katalog.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="display: block;">
+                    <img src="Images/Logo - Autonautica.svg" data-i18n="img_alt_logo:alt" alt="Autonautica"> 
+                </a>
+            </div>
+
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu">
+                <a href="index.html" data-i18n="menu_home">Početna</a>
+                <!-- NOVA PLOVILA -->
+                <div class="menu-item">
+                    <div class="menu-top">
+                        <a href="Granfort-plovila.html" class="menu-link" data-i18n="menu_granfort">Granfort plovila</a>
+                        <span class="dropdown-toggle"></span>
+                    </div>
+                    <div class="dropdown-menu">
+                        <a href="granfort-188.html">188</a>
+                        <a href="Granfort-212.html">212</a>
+                        <a href="Granfort-242GTC.html">242 GTC</a>
+                        <a href="Granfort-242-GTO.html">242 GTO</a>
+                        <a href="Granfort-255-GTO.html">255 GTO</a>
+                        <a href="Granfort-272-GTC.html">272 GTC</a>
+                        <a href="Granfort-272-GTO.html">272 GTO</a>
+                        <a href="Granfort-300-GTS.html">300 GTS</a>
+                        <a href="Granfort-300-GTX.html">300 GTX</a>
+                        <a href="Granfort-333-GTO.html">333 GTO</a>
+                        <a href="Granfort-366-GTS.html">366 GTS</a>
+                        <a href="Granfort-370-GTX.html">370 GTX</a>
+                    </div>
+                </div>
+
+                <!-- NOVE JAHTE -->
+                <div class="menu-item">
+                    <div class="menu-top">
+                        <a href="Schaefer-plovila.html" class="menu-link" data-i18n="menu_schaefer">Schaefer jahte</a>
+                        <span class="dropdown-toggle"></span>
+                    </div>
+                    <div class="dropdown-menu">
+                       <a href="Schaefer-V33.html">V 33</a>
+                        <a href="Schaefer-V44.html">V 44</a>
+                        <a href="Schaefer-380.html">380</a>
+                        <a href="Schaefer-400.html">400</a>
+                        <a href="Schaefer-450.html">450</a>
+                        <a href="Schaefer-510S.html">510S</a>
+                        <a href="Schaefer-510GT.html">510GT</a>
+                        <a href="Schaefer-600.html">600</a>
+                        <a href="Schaefer-660.html">660</a>
+                        <a href="Schaefer-770.html">770</a>
+                        <a href="Schaefer-26.html">26 mtr.</a>
+                    </div>
+                </div>
+
+                <a href="#" data-i18n="menu_used">Polovna plovila</a>
+                
+                <a href="Blog.html" data-i18n="menu_blog">Blog</a>
+                <a href="index.html#kontakt" data-i18n="menu_contact">Kontakt</a>
+
+                <div class="lang-switcher">
+                    <a href="#" class="lang-btn active" onclick="event.preventDefault(); changeLanguage('hr')">HR</a>
+                    <span class="lang-divider">|</span>
+                    <a href="#" class="lang-btn" onclick="event.preventDefault(); changeLanguage('en')">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. UVOD O BRENDU -->
+    <section class="brand-intro-section grid-active">
+        <div class="brand-intro-container">
+            
+            <div class="brand-intro-left">
+                <h2 data-i18n="brand_title">O brendu Granfort</h2>
+                <p data-i18n="brand_desc">Granfort predstavlja vrhunac moderne nautičke arhitekture, spajajući sportske performanse s iznimnim komforom. Svaki model iz ove flote dizajniran je s fokusom na stabilnost, ekonomičnu plovidbu i maksimalno iskorišten prostor na palubi.</p>
+            </div>
+            
+            <div class="brand-mini-grid">
+                <div class="mini-grid-item"><img src="Images/Granfort-212.webp" data-i18n="img_alt_b_detail:alt" alt="Granfort detalj"></div>
+                <div class="mini-grid-item"><img src="Images/Granfort-Homepage.webp" data-i18n="img_alt_b_sea:alt" alt="Granfort na moru"></div>
+                <div class="mini-grid-item"><img src="Images/Granfort-300GTS.webp" data-i18n="img_alt_b_bow:alt" alt="Granfort pramac"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 2. VODORAVNI KATALOG S PLOVILIMA -->
+    <section class="catalog-section horizontal-style">
+        <div class="catalog-container">
+            <div class="catalog-list-wrapper">
+
+                <!-- KARTICA 1: GRANFORT 188 -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="granfort-188.html"><img src="Images/Granfort-188.webp" data-i18n="img_alt_g188:alt" alt="Granfort 188"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Granfort 188</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>5.50 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>2.10 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_engine">Motor</strong><span>75 - 140 KS</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_7">7 osoba</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="granfort-188.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 2: GRANFORT 212 -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Granfort-212.html"><img src="Images/Granfort-212.webp" data-i18n="img_alt_g212:alt" alt="Granfort 212"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Granfort 212</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>6.73 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>2.32 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_engine">Motor</strong><span data-i18n="eng_up_to_175">do 175 KS</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_8">8 osoba</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Granfort-212.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- KARTICA 3: GRANFORT 242 GTC -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Granfort-242GTC.html"><img src="Images/Granfort-242-GTC-Main.webp" data-i18n="img_alt_g242gtc:alt" alt="Granfort 242 GTC"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Granfort 242 GTC</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>6.96 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>2.57 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_engine">Motor</strong><span data-i18n="eng_up_to_250">do 250 KS</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_cabins">Kabine</strong><span data-i18n="cab_1">1</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Granfort-242GTC.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 4: GRANFORT 242 GTO -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Granfort-242-GTO.html"><img src="Images/242-GTO-Main.webp" data-i18n="img_alt_g242gto:alt" alt="Granfort 242 GTO"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Granfort 242 GTO</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>6.96 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>2.57 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_engine">Motor</strong><span data-i18n="eng_up_to_250">do 250 KS</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_10">10 osoba</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Granfort-242-GTO.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 5: GRANFORT 255 GTO -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Granfort-255-GTO.html"><img src="Images/Granfort-255-GTO.webp" data-i18n="img_alt_g255gto:alt" alt="Granfort 255 GTO"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Granfort 255 GTO</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>7.25 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>2.57 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_engine">Motor</strong><span data-i18n="eng_up_to_300">do 300 KS</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_12">12 osoba</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Granfort-255-GTO.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 6: GRANFORT 272 GTC -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Granfort-272-GTC.html"><img src="Images/Granfort-Homepage.webp" data-i18n="img_alt_g272gtc:alt" alt="Granfort 272 GTC"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Granfort 272 GTC</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>8.58 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>2.78 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_engine">Motor</strong><span data-i18n="eng_up_to_350">do 350 KS</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_cabins">Kabine</strong><span data-i18n="cab_1">1</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Granfort-272-GTC.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 7: GRANFORT 272 GTO -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Granfort-272-GTO.html"><img src="Images/272-GTO-Main.webp" data-i18n="img_alt_g272gto:alt" alt="Granfort 272 GTO"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Granfort 272 GTO</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>8.58 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>2.78 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_engine">Motor</strong><span data-i18n="eng_up_to_350">do 350 KS</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_14">14 osoba</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Granfort-272-GTO.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 8: GRANFORT 300 GTS -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Granfort-300-GTS.html"><img src="Images/Granfort-300GTS.webp" data-i18n="img_alt_g300gts:alt" alt="Granfort 300 GTS"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Granfort 300 GTS</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>9.10 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>2.80 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_engine">Motor</strong><span data-i18n="eng_up_to_350">do 350 KS</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_cabins">Kabine</strong><span data-i18n="cab_1">1</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Granfort-300-GTS.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                                <!-- KARTICA 9: GRANFORT 300 GTX -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Granfort-300-GTX.html"><img src="Images/300GTX-Main.webp" data-i18n="img_alt_g300gtx:alt" alt="Granfort 300 GTX"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Granfort 300 GTX</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>9.10 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>2.80 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_engine">Motor</strong><span data-i18n="eng_up_to_350">do 350 KS</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_cabins">Kabine</strong><span data-i18n="cab_1">1</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Granfort-300-GTX.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 10: GRANFORT 333 GTO -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Granfort-333-GTO.html"><img src="Images/333GTO-Main.webp" data-i18n="img_alt_g333gto:alt" alt="Granfort 333 GTO"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Granfort 333 GTO</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>10.20 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>2.95 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_engine">Motor</strong><span data-i18n="eng_up_to_430">do 430 KS</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_cabins">Kabine</strong><span data-i18n="cab_1">1</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Granfort-333-GTO.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 11: GRANFORT 366 GTS -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Granfort-366-GTS.html"><img src="Images/366GTS-Main.webp" data-i18n="img_alt_g366gts:alt" alt="Granfort 366 GTS"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Granfort 366 GTS</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>10.20 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>2.95 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_engine">Motor</strong><span data-i18n="eng_up_to_430">do 430 KS</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_cabins">Kabine</strong><span data-i18n="cab_1">1</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Granfort-366-GTS.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 12: GRANFORT 370 GTX -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Granfort-370-GTX.html"><img src="Images/370GTX-Main.webp" data-i18n="img_alt_g370gtx:alt" alt="Granfort 370 GTX"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Granfort 370 GTX</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>11.03 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>3.52 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_engine">Motor</strong><span data-i18n="eng_up_to_2x400">do 2 x 400 KS</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_cabins">Kabine</strong><span data-i18n="cab_1">1</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Granfort-370-GTX.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- Kraj taga .catalog-list-wrapper -->
+        </div> <!-- Kraj taga .catalog-container -->
+    </section> <!-- Kraj taga .catalog-section -->
+
+    <!-- ==========================================================================
+         FOOTER STRANICE
+         ========================================================================== -->
+    <footer class="main-footer" id="kontakt">
+        <div class="footer-wrap">
+            
+            <!-- Lijeva strana: Kontakt informacije -->
+            <div class="footer-text-block">
+                <h2 data-i18n="contact_title">Kontaktirajte nas</h2>
+                <p class="footer-lead-text" data-i18n="contact_desc">Imate pitanja o našoj ponudi ili želite dogovoriti razgledavanje plovila? Slobodno nam se obratite.</p>
+                <p class="footer-info-text" data-i18n="html:contact_info">
+                    <strong>Adresa:</strong> Most Raša 8a, HR-52223 Raša<br>
+                    <strong>Telefon:</strong> +385 (0)52 894 6942<br>
+                    <strong>E-mail:</strong> info@autonautica.hr<br>
+                    <strong>Radno vrijeme:</strong> Pon - Pet: 08:00 - 16:00
+                </p>
+            </div>
+
+            <!-- Desna strana: Brze poveznice -->
+            <div class="footer-nav-block">
+                <h3 data-i18n="footer_quick_links">Brze poveznice</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html" data-i18n="footer_home">Početna</a></li>
+                    <li><a href="Granfort-plovila.html" data-i18n="footer_granfort">Granfort plovila</a></li>
+                    <li><a href="Schaefer-plovila.html" data-i18n="footer_schaefer">Schaefer jahte</a></li>
+                    <li><a href="Polovna-plovila.html" data-i18n="menu_used">Polovna plovila</a></li>
+                    
+                    <li><a href="index.html#kontakt" data-i18n="menu_contact">Kontakt</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Donji dio: Autorska prava -->
+        <div class="footer-bottom">
+            <p data-i18n="footer_text">&copy; 2026 Autonautica. Sva prava pridržana.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript skripta za prijevod -->
+    <script src="script.js"></script>
+</body>
+</html>
+

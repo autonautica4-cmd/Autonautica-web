@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO NASLOV STRANICE ZA KATALOG -->
+    <title data-i18n="seo_title_schaefer_katalog">Schaefer jahte - Autonautica</title>
+
+    <!-- SEO OPIS STRANICE ZA KATALOG -->
+    <meta name="description" data-i18n="seo_desc_schaefer_katalog:content" content="Istražite kompletnu ponudu luksuznih jahti i krstaša brenda Schaefer Yachts. Pogledajte specifikacije i zatražite službenu ponudu za modele od V33 do superjahte od 26 metara.">
+
+    <!-- Google Fonts Učitavanje -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <!-- CSS Stilovi -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="katalog.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="display: block;">
+                    <img src="Images/Logo - Autonautica.svg" data-i18n="img_alt_logo:alt" alt="Autonautica"> 
+                </a>
+            </div>
+
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu">
+                <a href="index.html" data-i18n="menu_home">Početna</a>
+                <!-- NOVA PLOVILA -->
+                <div class="menu-item">
+                    <div class="menu-top">
+                        <a href="Granfort-plovila.html" class="menu-link" data-i18n="menu_granfort">Granfort plovila</a>
+                        <span class="dropdown-toggle"></span>
+                    </div>
+                    <div class="dropdown-menu">
+                        <a href="granfort-188.html">188</a>
+                        <a href="Granfort-212.html">212</a>
+                        <a href="Granfort-242GTC.html">242 GTC</a>
+                        <a href="Granfort-242-GTO.html">242 GTO</a>
+                        <a href="Granfort-255-GTO.html">255 GTO</a>
+                        <a href="Granfort-272-GTC.html">272 GTC</a>
+                        <a href="Granfort-272-GTO.html">272 GTO</a>
+                        <a href="Granfort-300-GTS.html">300 GTS</a>
+                        <a href="Granfort-300-GTX.html">300 GTX</a>
+                        <a href="Granfort-333-GTO.html">333 GTO</a>
+                        <a href="Granfort-366-GTS.html">366 GTS</a>
+                        <a href="Granfort-370-GTX.html">370 GTX</a>
+                    </div>
+                </div>
+
+                <!-- NOVE JAHTE -->
+                <div class="menu-item">
+                    <div class="menu-top">
+                        <a href="Schaefer-plovila.html" class="menu-link" data-i18n="menu_schaefer">Schaefer jahte</a>
+                        <span class="dropdown-toggle"></span>
+                    </div>
+                    <div class="dropdown-menu">
+                        <a href="Schaefer-V33.html">V 33</a>
+                        <a href="Schaefer-V44.html">V 44</a>
+                        <a href="Schaefer-380.html">380</a>
+                        <a href="Schaefer-400.html">400</a>
+                        <a href="Schaefer-450.html">450</a>
+                        <a href="Schaefer-510S.html">510S</a>
+                        <a href="Schaefer-510GT.html">510GT</a>
+                        <a href="Schaefer-600.html">600</a>
+                        <a href="Schaefer-660.html">660</a>
+                        <a href="Schaefer-770.html">770</a>
+                        <a href="Schaefer-26.html">26 mtr.</a>
+                    </div>
+                </div>
+
+                <a href="Polovna-plovila.html" data-i18n="menu_used">Polovna plovila</a>
+                
+                <a href="Blog.html" data-i18n="menu_blog">Blog</a>
+                <a href="index.html#kontakt" data-i18n="menu_contact">Kontakt</a>
+
+                <div class="lang-switcher">
+                    <a href="#" class="lang-btn active" onclick="event.preventDefault(); changeLanguage('hr')">HR</a>
+                    <span class="lang-divider">|</span>
+                    <a href="#" class="lang-btn" onclick="event.preventDefault(); changeLanguage('en')">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. UVOD O BRENDU -->
+    <section class="brand-intro-section grid-active">
+        <div class="brand-intro-container">
+            
+            <div class="brand-intro-left">
+                <h2 data-i18n="schaefer_brand_title">Schaefer jahte</h2>
+                <p data-i18n="schaefer_brand_desc">Schaefer jahte predstavljaju savršen spoj brazilske strasti prema moru, vrhunske tehnologije i prepoznatljivog modernog dizajna koji osvaja Jadransku obalu. Ove luksuzne motorne jahte, poznate po iznimnim performansama, prostranosti i inovativnim "beach club" rješenjima, stvorene su za bezbrižno krstarenje i uživanje na moru čak i u najzahtjevnijim vremenskim uvjetima.</p>
+            </div>
+            
+            <div class="brand-mini-grid">
+                <div class="mini-grid-item"><img src="Images/Schaefer-About.webp" data-i18n="img_alt_schaefer_about:alt" alt="Jahta Schaefer na moru"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 2. VODORAVNI KATALOG S PLOVILIMA -->
+    <section class="catalog-section horizontal-style">
+        <div class="catalog-container">
+            <div class="catalog-list-wrapper">
+
+                <!-- KARTICA 1: Schaefer V 33 -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Schaefer-V33.html"><img src="Images/Schaefer-V33-Main.webp" data-i18n="img_alt_cat_v33:alt" alt="Schaefer V33"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Schaefer V33</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>10.30 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>3.35 m</span></div>
+                            <div class="spec-item"><strong data-i18n="g188_lbl_fuel">Kapacitet goriva</strong><span>700 l</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_v33_value">10 osoba / 2 Noćenje</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Schaefer-V33.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- KARTICA 2: Schaefer V44 -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Schaefer-V44.html"><img src="Images/V44-Main.jpeg" data-i18n="img_alt_cat_v44:alt" alt="Schaefer V44"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Schaefer V44</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>13.61 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>4.17 m</span></div>
+                            <div class="spec-item"><strong data-i18n="g188_lbl_fuel">Kapacitet goriva</strong><span>1650 l</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_v44_value">14 osoba / 4 Noćenje</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Schaefer-V44.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 3: Schaefer 380 -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Schaefer-380.html"><img src="Images/380-Main.webp" data-i18n="img_alt_cat_s380:alt" alt="Schaefer 380"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Schaefer 380</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>12.39 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>3.69 m</span></div>
+                            <div class="spec-item"><strong data-i18n="g188_lbl_fuel">Kapacitet goriva</strong><span data-i18n="cap_s380_fuel">1035 l / 690 l</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_s380_value">14 osoba / 4 Noćenje</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Schaefer-380.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 4: Schaefer 400 -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Schaefer-400.html"><img src="Images/400-Main.webp" data-i18n="img_alt_cat_s400:alt" alt="Schaefer 400 glavna slika"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Schaefer 400</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>12.25 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>3.88 m</span></div>
+                            <div class="spec-item"><strong data-i18n="g188_lbl_fuel">Kapacitet goriva</strong><span>800 l</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_s400_value">14 / 5 Noćenje</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Schaefer-400.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 5: Schaefer 450 -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Schaefer-450.html"><img src="Images/450-Main.webp" data-i18n="img_alt_cat_s450:alt" alt="Schaefer 450 glavna slika"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Schaefer 450</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>13.66 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>4.26 m</span></div>
+                            <div class="spec-item"><strong data-i18n="g188_lbl_fuel">Kapacitet goriva</strong><span>1200 l</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_s450_value">14 / (4 + 1 ) Noćenje</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Schaefer-450.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- KARTICA 6: Schaefer 510S -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Schaefer-510S.html"><img src="Images/510S-Main.jpg" data-i18n="img_alt_cat_s510s:alt" alt="Schaefer 510S glavna slika"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Schaefer 510S</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>15.82 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>4.36 m</span></div>
+                            <div class="spec-item"><strong data-i18n="g188_lbl_fuel">Kapacitet goriva</strong><span>1300 l</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_s510s_value">16 / (6 + 1 ) Noćenje</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Schaefer-510S.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 7: Schaefer 510GT -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Schaefer-510GT.html"><img src="Images/510GT-Main.webp" data-i18n="img_alt_cat_s510gt:alt" alt="Schaefer 510GT"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Schaefer 510GT</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>15.82 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>4.36 m</span></div>
+                            <div class="spec-item"><strong data-i18n="g188_lbl_fuel">Kapacitet goriva</strong><span>1300 l</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_s510gt_value">16 / (6 + 1 ) Noćenje</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Schaefer-510GT.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 8: Schaefer 600 -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Schaefer-600.html"><img src="Images/600-Main.webp" data-i18n="img_alt_cat_s600:alt" alt="Schaefer 600"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Schaefer 600</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>18.08 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>4.96 m</span></div>
+                            <div class="spec-item"><strong data-i18n="g188_lbl_fuel">Kapacitet goriva</strong><span>2100 l</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_s600_value">18 / (6 + 2) Noćenje</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Schaefer-600.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 9: Schaefer 660 -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Schaefer-660.html"><img src="Images/660-Main.webp" data-i18n="img_alt_cat_s660:alt" alt="Schaefer 660"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Schaefer 660</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>20.12 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>5.5 m</span></div>
+                            <div class="spec-item"><strong data-i18n="g188_lbl_fuel">Kapacitet goriva</strong><span>2600 l</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_s660_value">18 / (8 + 2) Noćenje</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Schaefer-660.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- KARTICA 10: Schaefer 770 -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Schaefer-770.html"><img src="Images/770-Main.webp" data-i18n="img_alt_cat_s770:alt" alt="Schaefer 770"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Schaefer 770</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>23.53 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>5.91 m</span></div>
+                            <div class="spec-item"><strong data-i18n="g188_lbl_fuel">Kapacitet goriva</strong><span>4450 l</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_s770_value">25 / (8 + 3) Noćenje</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Schaefer-770.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTICA 11: Schaefer 26 m -->
+                <div class="product-row-card">
+                    <div class="row-card-img">
+                        <a href="Schaefer-26.html"><img src="Images/26-Main.webp" data-i18n="img_alt_cat_s26m:alt" alt="Schaefer 26 mtr"></a>
+                    </div>
+                    <div class="row-card-specs-box">
+                        <h2>Schaefer 26 m</h2>
+                        <div class="row-specs-grid">
+                            <div class="spec-item"><strong data-i18n="spec_length">Duljina</strong><span>26.04 m</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_width">Širina</strong><span>6.20 m</span></div>
+                            <div class="spec-item"><strong data-i18n="g188_lbl_fuel">Kapacitet goriva</strong><span>5.100 l</span></div>
+                            <div class="spec-item"><strong data-i18n="spec_capacity">Kapacitet</strong><span data-i18n="cap_s26m_value">21 / (9 + 3) Noćenje</span></div>
+                        </div>
+                    </div>
+                    <div class="row-card-action-box">
+                        <div class="action-box-inner">
+                            <span class="price-label" data-i18n="price_label">Cijena (Informativno):</span>
+                            <span class="product-price" data-i18n="price_on_request">Na upit</span>
+                            <a href="Schaefer-26.html" class="product-btn" data-i18n="btn_more_info">Saznaj više</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- Kraj taga .catalog-list-wrapper -->
+        </div> <!-- Kraj taga .catalog-container -->
+    </section> <!-- Kraj taga .catalog-section -->
+
+    <!-- ==========================================================================
+         FOOTER STRANICE
+         ========================================================================== -->
+    <footer class="main-footer" id="kontakt">
+        <div class="footer-wrap">
+            
+            <!-- Lijeva strana: Kontakt informacije -->
+            <div class="footer-text-block">
+                <h2 data-i18n="contact_title">Kontaktirajte nas</h2>
+                <p class="footer-lead-text" data-i18n="contact_desc">Imate pitanja o našoj ponudi ili želite dogovoriti razgledavanje plovila? Slobodno nam se obratite.</p>
+                <p class="footer-info-text" data-i18n="html:contact_info">
+                    <strong>Adresa:</strong> Vaša Ulica 123, 52100 Pula, Hrvatska<br>
+                    <strong>Telefon:</strong> +385 (0)91 123 4567<br>
+                    <strong>E-mail:</strong> info@autonautica.hr<br>
+                    <strong>Radno vrijeme:</strong> Pon - Pet: 08:00 - 16:00
+                </p>
+            </div>
+
+            <!-- Desna strana: Brze poveznice -->
+            <div class="footer-nav-block">
+                <h3 data-i18n="footer_quick_links">Brze poveznice</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html" data-i18n="footer_home">Početna</a></li>
+                    <li><a href="Granfort-plovila.html" data-i18n="footer_granfort">Granfort ponuda</a></li>
+                    <li><a href="nove-jahte.html" data-i18n="footer_schaefer">Schaefer jahte</a></li>
+                    <li><a href="#" data-i18n="menu_used">Polovna plovila</a></li>
+                    <li><a href="#" data-i18n="menu_about">O nama</a></li>
+                    <li><a href="#" data-i18n="menu_contact">Kontakt</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Donji dio: Autorska prava -->
+        <div class="footer-bottom">
+            <p data-i18n="footer_text">&copy; 2026 Autonautica. Sva prava pridržana.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript skripta za prijevod -->
+    <script src="script.js"></script>
+</body>
+</html>

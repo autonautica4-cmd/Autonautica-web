@@ -1,0 +1,596 @@
+/* =========================================================================
+   SIMPLELIGHTBOX CORE & REFORSIRANI STILOVI
+   ========================================================================= */
+.sl-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(10, 17, 24, 0.96) !important;
+  display: none;
+  z-index: 999999 !important;
+}
+
+.sl-wrapper {
+  z-index: 1000000 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sl-wrapper * {
+  box-sizing: border-box;
+}
+
+.sl-wrapper .sl-close {
+  border: 0;
+  font-family: Arial, sans-serif !important;
+  font-size: 40px !important;
+  color: #ffffff !important;
+  background: rgba(197, 160, 89, 0.3) !important;
+  backdrop-filter: blur(5px);
+  cursor: pointer !important;
+  height: 50px !important;
+  width: 50px !important;
+  line-height: 50px !important;
+  padding: 0;
+  margin: 0;
+  position: fixed !important;
+  z-index: 1000005 !important;
+  top: 30px !important;
+  right: 40px !important;
+  text-align: center !important;
+  border-radius: 50% !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+}
+
+.sl-wrapper .sl-close:focus,
+.sl-wrapper .sl-navigation button:focus {
+  outline: 0;
+}
+
+.sl-wrapper .sl-navigation {
+  display: none;
+}
+
+.sl-wrapper .sl-navigation button {
+  border: 0;
+  font-family: Arial, sans-serif !important;
+  font-size: 50px !important;
+  color: #ffffff !important;
+  background: rgba(10, 17, 24, 0.4) !important;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  cursor: pointer !important;
+  height: 60px !important;
+  width: 60px !important;
+  line-height: 52px !important;
+  padding: 0;
+  margin: 0;
+  position: fixed !important;
+  z-index: 1000005 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  text-align: center !important;
+  border-radius: 50% !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+}
+
+.sl-wrapper .sl-navigation button.sl-next {
+  right: 40px !important;
+  left: auto;
+}
+
+.sl-wrapper .sl-navigation button.sl-prev {
+  left: 40px !important;
+  right: auto;
+}
+
+.sl-wrapper .sl-close:hover,
+.sl-wrapper .sl-navigation button:hover {
+  background: #C5A059 !important;
+  color: #0A1118 !important;
+}
+
+.sl-wrapper .sl-image {
+  position: fixed;
+  display: inline-block;
+  visibility: hidden;
+  z-index: 10000;
+  text-align: center;
+}
+
+.sl-wrapper .sl-image img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.sl-wrapper .sl-image iframe {
+  border: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sl-wrapper .sl-caption {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  z-index: 1030;
+}
+
+.sl-wrapper .sl-counter {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  display: none;
+  color: #000;
+  z-index: 1015;
+}
+
+.sl-spinner {
+  display: none;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 5px solid #666;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  z-index: 1005;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+.sl-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+/* =========================================================================
+   POVRATAK NA PONUDU LINK
+   ========================================================================= */
+.back-nav-container {
+  max-width: 1400px;
+  margin: 130px auto 15px;
+  padding: 0 40px;
+}
+
+.back-link {
+  color: #777777;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  color: #C5A059;
+  transform: translateX(-4px);
+}
+/* =========================================================================
+   GLAVNA STRUKTURA STRANICE (RAVNI JEDNODIJELNI SCROLL)
+   ========================================================================= */
+.boat-detail-container {
+  max-width: 1400px;
+  margin: 0 auto 100px;
+  padding: 0 40px;
+  display: flex !important;
+  flex-direction: column !important; 
+  gap: 60px;
+}
+
+
+.boat-gallery {
+  display: grid !important;
+  grid-template-columns: 1.3fr 1fr !important;
+  gap: 20px !important;
+  width: 100% !important;
+  position: relative !important;
+  perspective: 1000px;
+}
+
+/* --- GLAVNA SLIKA (Lijevo) --- */
+.main-image-box {
+  grid-column: 1 !important;
+  height: 560px !important; 
+  margin-bottom: 0 !important;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(10, 17, 24, 0.08);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.5s ease !important;
+}
+
+.main-image-box a, 
+.main-image-box img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* --- DESNA REŠETKA S 4 SLIKE --- */
+.thumbnail-grid {
+  grid-column: 2 !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important; 
+  grid-template-rows: repeat(2, 1fr) !important;
+  gap: 15px !important;
+  height: 560px !important; 
+}
+
+.thumbnail-grid a {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important; 
+  overflow: hidden !important;
+  border-radius: 4px !important;
+  box-shadow: 0 10px 25px rgba(10, 17, 24, 0.05);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.5s ease !important;
+}
+
+.thumbnail-grid img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+
+.thumbnail-grid a:nth-child(n+5) {
+  display: none !important;
+}
+
+
+.boat-gallery:hover .main-image-box,
+.boat-gallery:hover .thumbnail-grid a {
+  filter: brightness(0.85) contrast(1.05);
+}
+
+
+.main-image-box:hover,
+.thumbnail-grid a:hover {
+  filter: brightness(1) contrast(1) !important;
+  transform: translateY(-8px) scale(1.02) translateZ(10px) !important;
+  box-shadow: 0 30px 60px rgba(10, 17, 24, 0.25) !important;
+  z-index: 10 !important;
+}
+
+.main-image-box:hover img,
+.thumbnail-grid a:hover img {
+  transform: scale(1.06) !important;
+}
+
+/* =========================================================================
+   SADRŽAJ (TEKST, TABLICA, OPREMA) - PUNA ŠIRINA ISPOD SLIKA
+   ========================================================================= */
+.boat-info-sidebar {
+  width: 100% !important;
+  position: static !important;
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.boat-title {
+  font-family: 'Tenor Sans', sans-serif !important;
+  font-size: 42px !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  color: #0A1118 !important;
+  margin-bottom: 15px !important;
+}
+
+.boat-subtitle {
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  color: #555555 !important;
+  font-weight: 300 !important;
+  max-width: 850px;
+  margin-bottom: 25px !important;
+}
+
+.detail-price {
+  font-family: 'Tenor Sans', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #C5A059 !important;
+  margin-bottom: 50px !important;
+  padding: 12px 24px !important;
+  border: 1px solid #C5A059 !important;
+  letter-spacing: 2px !important;
+  display: inline-block;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
+.detail-price::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  z-index: -1;
+}
+
+.detail-price:hover::before {
+  left: 100%;
+  transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.detail-price:hover {
+  background: #0A1118 !important;
+  color: #ffffff !important;
+  border-color: #0A1118 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(10, 17, 24, 0.2);
+}
+.specs-table-box h3, 
+.equip-box h3 {
+  font-family: 'Tenor Sans', sans-serif !important;
+  font-size: 15px !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #0A1118;
+  margin-bottom: 25px;
+}
+
+/* =========================================================================
+   TEHNIČKA TABLICA
+   ========================================================================= */
+.specs-table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin-bottom: 60px !important;
+  margin-top: 10px !important;
+}
+
+.specs-table tr {
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid #EDEFF2 !important;
+}
+
+.specs-table tr:hover {
+  background-color: rgba(197, 160, 89, 0.02) !important;
+}
+
+.specs-table td {
+  padding: 20px 0 !important;
+  font-size: 15px !important;
+  vertical-align: middle !important;
+}
+
+.specs-table td strong {
+  color: #777777 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+}
+
+.specs-table td:last-child {
+  text-align: right !important;
+  color: #0A1118 !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* =========================================================================
+   LUKSUZNI STAKLENI PANEL ZA OPREMU
+   ========================================================================= */
+.equip-box {
+  background: rgba(255, 255, 255, 0.55) !important; 
+  backdrop-filter: blur(20px) !important;            
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(197, 160, 89, 0.25) !important; 
+  padding: 45px !important;
+  box-shadow: 0 20px 50px rgba(10, 17, 24, 0.02) !important;
+  margin-bottom: 60px !important;
+}
+
+.equip-box ul {
+  list-style: none !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important; 
+  gap: 16px 40px !important;
+}
+
+.equip-box li {
+  font-size: 14px !important;
+  color: #1F252B !important;
+  font-weight: 300 !important;
+  position: relative !important;
+  padding-left: 24px !important;
+}
+
+.equip-box li::before {
+  content: '' !important;
+  position: absolute !important;
+  left: 2px !important;
+  top: 7px !important;
+  width: 5px !important;
+  height: 5px !important;
+  background-color: #C5A059 !important;
+  transform: rotate(45deg) !important;
+}
+/* =========================================================================
+   UPIT FORMA NA DNU STRANICE
+   ========================================================================= */
+.boat-inquiry-section {
+  background-color: #0A1118 !important;
+  color: #ffffff !important;
+  padding: 120px 40px !important;
+}
+
+.inquiry-container {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.inquiry-container h2 {
+  font-family: 'Tenor Sans', sans-serif !important;
+  font-size: 36px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  margin-bottom: 15px !important;
+}
+
+.inquiry-container p {
+  color: rgba(255, 255, 255, 0.4) !important;
+  margin-bottom: 50px !important;
+  font-size: 15px !important;
+  font-weight: 300;
+}
+
+.inquiry-form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 25px !important;
+}
+
+.form-row {
+  display: flex !important;
+  gap: 25px !important;
+}
+
+.inquiry-form input,
+.inquiry-form textarea {
+  width: 100% !important;
+  padding: 18px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background: rgba(255, 255, 255, 0.02) !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 14px !important;
+  color: #ffffff !important;
+  border-radius: 0px !important;
+  outline: none !important;
+  transition: all 0.3s ease;
+}
+
+.inquiry-form input:focus,
+.inquiry-form textarea:focus {
+  border-color: #C5A059 !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.inquiry-btn {
+  padding: 18px !important;
+  background: #C5A059 !important;
+  color: #0A1118 !important;
+  border: 1px solid #C5A059 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  cursor: pointer !important;
+  font-size: 13px !important;
+  margin-top: 10px !important;
+  transition: all 0.3s ease !important;
+}
+
+.inquiry-btn:hover {
+  background: transparent !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+/* =========================================================================
+   RESPONZIVNOST ZA STRANICU DETALJA
+   ========================================================================= */
+@media (max-width: 1024px) {
+  .boat-gallery {
+    grid-template-columns: 1fr !important;
+  }
+
+  .main-image-box {
+    height: 400px !important;
+  }
+
+  .thumbnail-grid {
+    grid-column: 1 !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    height: auto !important;
+  }
+
+  .thumbnail-grid a {
+    height: 140px !important;
+  }
+
+  .equip-box ul {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column !important;
+    gap: 25px !important;
+  }
+
+  .inquiry-container h2 {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .back-nav-container {
+    margin: 100px auto 15px !important;
+    padding: 0 20px !important;
+  }
+
+  .boat-detail-container {
+    padding: 0 20px !important;
+    gap: 40px !important;
+  }
+
+  .specs-table td {
+    padding: 16px 0 !important;
+  }
+}
