@@ -318,7 +318,8 @@ button {
 }
 /* ==========================================================================
    HERO SEKCIJA
-   ========================================================================== */
+   ========================================================================== if else statement 
+ */
 .hero {
   position: relative;
   height: 100vh;
@@ -1225,8 +1226,226 @@ button {
     height: 16px;
     margin-right: 0.25rem; 
   }
+
+  } 
+} 
+} /* Ove tri zagrade popravljaju i zatvaraju sve zaostale mobilne upite u tvom kodu */
+
+/* ==========================================================================
+   3b. SEKCIJA: ZASTUPNIŠTVA ZA MOTORE (YAMAHA & MERCURY) - DEFINITIVNI FIX
+   ========================================================================== */
+section.motors-brands-section {
+  display: block !important;
+  opacity: 1 !important;
+  transform: none !important;
+  padding: 9rem 2rem !important;
+  background-color: #ffffff !important;
+  visibility: visible !important;
 }
 
+.motors-container {
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
 }
 
+.motors-header {
+  text-align: center !important;
+  margin-bottom: 5rem !important;
+  display: block !important;
+}
+
+.motors-header .section-title {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+  display: block !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.motors-subtitle {
+  font-size: 1.15rem !important;
+  color: var(--text-muted) !important;
+  max-width: 650px !important;
+  margin: 0 auto !important;
+  line-height: 1.7 !important;
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+  display: block !important;
+}
+
+.motors-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 3rem !important;
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+.motor-card {
+  position: relative !important;
+  background-color: var(--bg-light) !important;
+  border-radius: 4px !important;
+  padding: 4.5rem 3.5rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.02) !important;
+  transition: var(--transition) !important;
+  overflow: hidden !important;
+}
+
+.motor-card::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 20px !important;
+  border: 1px solid rgba(197, 168, 128, 0) !important;
+  transition: var(--transition) !important;
+  pointer-events: none !important;
+  z-index: 3 !important;
+}
+
+.motor-logo-wrap {
+  height: 80px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 2.5rem !important;
+}
+
+.motor-logo {
+  max-height: 100% !important;
+  max-width: 220px !important;
+  object-fit: contain !important;
+  filter: grayscale(15%) !important;
+  transition: var(--transition) !important;
+}
+
+.motor-text-content h3 {
+  color: var(--primary-color) !important;
+  font-size: 1.65rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1.25rem !important;
+  letter-spacing: 1px !important;
+}
+
+.motor-text-content p {
+  color: var(--text-muted) !important;
+  font-size: 1.02rem !important;
+  line-height: 1.8 !important;
+  margin-bottom: 2.5rem !important;
+  max-width: 480px !important;
+}
+
+.motor-link-btn {
+  display: inline-block !important;
+  color: var(--accent-color) !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  position: relative !important;
+  padding-bottom: 5px !important;
+}
+
+.motor-link-btn::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 35px !important;
+  height: 1px !important;
+  background-color: var(--accent-color) !important;
+  transition: var(--transition) !important;
+}
+
+.motor-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 30px 60px rgba(11, 19, 37, 0.06) !important;
+}
+
+.motor-card:hover::after {
+  border: 1px solid rgba(197, 168, 128, 0.25) !important;
+}
+
+.motor-card:hover .motor-logo {
+  filter: grayscale(0%) !important;
+  transform: scale(1.03) !important;
+}
+
+.motor-card:hover .motor-link-btn {
+  color: var(--primary-color) !important;
+}
+
+.motor-card:hover .motor-link-btn::after {
+  width: 100% !important;
+  background-color: var(--primary-color) !important;
+}
+
+/* ==========================================================================
+   RESPONZIVNOST ZA OVE KARTICE
+   ========================================================================== */
+@media (max-width: 1400px) {
+  .motors-grid {
+    gap: 1.5rem !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .motor-card {
+    padding: 3.5rem 2.5rem !important;
+  }
+}
+
+@media (max-width: 991px) {
+  section.motors-brands-section {
+    padding: 6rem 2rem !important;
+  }
+  .motors-grid {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+  }
+  .motors-header {
+    margin-bottom: 3.5rem !important;
+  }
+}
+
+@media (max-width: 650px) {
+  section.motors-brands-section {
+    padding: 5rem 1.5rem !important;
+  }
+  .motors-grid {
+    max-width: 450px !important;
+    margin: 0 auto !important;
+  }
+  .motor-card {
+    padding: 3rem 1.5rem !important;
+  }
+  .motor-card::after {
+    inset: 12px !important;
+  }
+  .motor-logo-wrap {
+    height: 65px !important;
+    margin-bottom: 1.75rem !important;
+  }
+  .motor-text-content h3 {
+    font-size: 1.45rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  section.motors-brands-section {
+    padding: 4rem 1rem !important;
+  }
+  .motors-header .section-title {
+    font-size: 1.75rem !important;
+    letter-spacing: 2px !important;
+  }
+  .motors-subtitle {
+    font-size: 1rem !important;
+  }
 }

@@ -32,20 +32,29 @@
   "offer_title": "Our Offer",
   "offer_btn": "View offer",
 
+  
+  
   "blog_title": "Tips & News",
-  "blog_tag_tips": "Tips",
-  "blog_tag_routes": "Routes",
-  "blog_tag_guide": "Guide",
-  "blog_date_1": "June 15, 2026",
-  "blog_date_2": "June 02, 2026",
-  "blog_date_3": "May 20, 2026",
-  "blog_h3_1": "How to properly prepare your boat for the summer season",
-  "blog_h3_2": "Top 5 hidden bays on the Adriatic for anchoring a yacht",
-  "blog_h3_3": "Buying guide: What to look out for with pre-owned boats",
-  "blog_p_1": "Find out what crucial steps and checks you need to make before the first sail to ensure a carefree summer...",
-  "blog_p_2": "We bring you a list of the most beautiful and safest locations that you must visit with your vessel this year...",
-  "blog_p_3": "Hull inspection, engine hours, and documentation. Learn how to spot an excellent opportunity and avoid costly mistakes...",
   "blog_link": "Read more",
+  "blog_main_subheading": "The world of luxury yachts and marine industry",
+  
+  
+  "blog_tag_luxury" : "Luxury",
+  "blog_tag_routes": "Routes",
+  "img_alt_b2": "Best routes",
+  "blog_date_2": "June 2, 2026",
+  "blog_h3_2": "Schaefer Yachts: Innovation and Brazilian luxury conquering the sea",
+  "blog_p_2": "Discover how fiberglass vacuum infusion and the revolutionary Beach Club system with hydraulic balconies redefined anchoring...",
+
+  "blog_tag_guide": "Guide",
+  "img_alt_b3": "Buying a vessel",
+  "blog_date_3": "May 20, 2026",
+  "blog_h3_3": "Outboard or inboard engine: What to choose on a modern cruiser?",
+  "blog_p_3": "Technology has changed. Here are three key reasons why outboard propulsion today offers more space, cheaper servicing, and easier maintenance... ",
+
+
+
+
 
   "contact_title": "Contact Us",
   "contact_desc": "Do you have questions about our offer or want to arrange a boat viewing? Feel free to contact us.",
@@ -1487,8 +1496,205 @@
   "img_alt_cat_s600": "Schaefer 600 cruising profile open sea",
   "img_alt_cat_s660": "Schaefer 660 flagship yacht running shot",
   "img_alt_cat_s770": "Schaefer 770 maximum length luxury yacht",
-  "img_alt_cat_s26m": "Schaefer 26 m superyacht running tracking profile"
+  "img_alt_cat_s26m": "Schaefer 26 m superyacht running tracking profile",
+
+"motors_section_title": "Authorized Dealers",
+"motors_section_subtitle": "Premium outboard motors for uncompromising reliability at sea",
+"motors_yamaha_title": "Yamaha Marine",
+"motors_yamaha_desc": "A class of its own. As authorized dealers, we offer a complete range of Yamaha outboard motors known for Japanese precision, top performance, and durability. Ensure maximum reliability for your vessel with our support and expert advice.",
+"motors_mercury_title": "Mercury Marine",
+"motors_mercury_desc": "Power, innovation, and reliability. Bringing you American engineering built for the most demanding maritime conditions. Mercury engines deliver unmatched torque, advanced fuel economy technology, and quiet operation, making every voyage completely worry-free.",
+
+
+  "post1_meta_title": "German Precision in Shipbuilding: How Granfort Vessels Are Made | Blog",
+  "blog_back_link": "← Back to blog",
+  "blog_date_1": "August 6, 2026",
+  "blog_tag_brands": "Brands",
+  "blog_h3_1": "German Precision in Shipbuilding: How Granfort Vessels Are Made",
+  "img_alt_b1": "Granfort premium yachts",
+  
+  "post1_p1": "When you hear that an engineering team from Porsche Consulting is behind the development of a vessel, it is immediately clear that there is no room for improvisation. This is precisely the story of the Granfort brand, the premium export line of the Brazilian giant Fibrafort. More than 18,000 vessels have come out of the shipyard in the city of Itajaí so far, and we bring you an insight into how these technologically advanced speedboats and family cruisers are built.",
+  
+  "post1_h2_1": "Porsche's Signature on the Production Line",
+  "post1_p2": "The partnership with Porsche Consulting has rewritten the rules of traditional shipbuilding. Every step in the factory – from the precise resin pouring time to the assembly of interior elements – is optimized to the second. This means the elimination of any human errors that are common in mass fiberglass production. Due to this level of engineering, Granfort proudly offers a structural warranty of up to 10 years on all its hulls, which is a rarity in this nautical segment.",
+  
+  "post1_h2_2": "Optimized for Outboard Engines and Maximum Cockpit Space",
+  "post1_p3": "Granfort models, such as the popular 300 GTX and 370 GTX, are designed with an emphasis on day-boating and open space. The factory has developed special hydrodynamic deep-V hull solutions that perfectly handle the weight and thrust of powerful twin outboard engines. Despite the outboard propulsion, the engineers managed to retain spacious stern platforms and ensure premium ergonomics in a cockpit that accommodates up to 12 passengers, combining a sporty spirit with the luxury of a weekend cruiser.",
+  
+  "post1_strong_conclusion": "CONCLUSION:",
+  "post1_p4": "Granfort combines a South American passion for design with German precision in production organization. The result is an extremely robust and visually stunning boat built to easily withstand even the toughest conditions at sea.",
+    "post1_meta_title": "How Granfort Vessels Are Made | Blog",
+  "post1_meta_desc": "Discover how the partnership with Porsche Consulting ensures top German precision in shipbuilding and delivers a 10-year warranty on Granfort vessels.",
+  "post1_meta_keywords": "Granfort vessels, boat sales, Fibrafort, Porsche Consulting, yachting, premium speedboats",
+
+  "post2_meta_title": "Schaefer Yachts: Innovation & Luxury | Blog",
+  "post2_meta_desc": "Discover Schaefer Yachts: premium Brazilian luxury, vacuum infusion technology, and the revolutionary Beach Club system with hydraulic side balconies.",
+  "post2_meta_keywords": "Schaefer Yachts, luxury yachts, yachts for sale, Beach Club boat, vacuum infusion, Volvo Penta IPS",
+  
+  "img_alt_logo": "Autonautica Logo",
+  "menu_home": "Home",
+  "menu_granfort": "Granfort Vessels",
+  "menu_schaefer": "Schaefer Yachts",
+  "menu_used": "Pre-Owned",
+  "menu_blog": "Blog",
+  "menu_contact": "Contact",
+
+  "blog_back_link": "← Back to blog",
+  "blog_date_2": "August 2, 2026",
+  "blog_tag_luxury": "Luxury",
+  "blog_h3_2": "Schaefer Yachts: Innovation and Brazilian Luxury Conquering the Seas",
+  "img_alt_b2": "Schaefer luxury yachts",
+  
+  "post2_p1": "Schaefer Yachts is another Brazilian marvel that has completely conquered the global luxury yacht market. Founded by designer Marcio Schaefer, the shipyard has become synonymous with uncompromising luxury and technological innovations that change the way we spend time at anchor. With over three decades of tradition, Schaefer successfully competes with the most renowned European names.",
+  
+  "post2_h2_1": "Beach Club Revolution and Hydraulic Balconies",
+  "post2_p2": "What has made Schaefer recognizable worldwide are its smart cockpit solutions. Their mid-range models brought a revolution with hydraulic side balconies – at the press of a button, the sides of the boat lower and transform the stern area into a massive private beach club. The systems are engineered and tested in extreme conditions to ensure connections remain 100% watertight while navigating rough waves, providing maximum safety alongside unprecedented comfort.",
+  
+  "post2_h2_2": "Vacuum Infusion and Complete Production Independence",
+  "post2_p3": "Schaefer controls absolutely every detail within its modern factory. Hulls are produced using an advanced fiberglass vacuum infusion process, achieving minimal weight combined with maximum structural strength. Inside the shipyard, there are dedicated facilities for precision woodworking and upholstery workshops. All interior components are designed to withstand years of sun and salt exposure, maintaining the premium look and fine texture of luxury furniture.",
+  
+  "post2_strong_conclusion": "EMPHASIS ON PERFORMANCE:",
+  "post2_p4": "Working closely with Volvo Penta, Schaefer optimizes its hulls for IPS propulsion systems. This ensures incredibly smooth cruising, sporty handling via joystick, and significantly lower fuel consumption for these large yachts.",
+  
+  "main_footer_text": "© 2026 Autonautica. All rights reserved.",
+    "post2_p1": "Schaefer Yachts is another Brazilian marvel that has completely conquered the global luxury yacht market. Founded by designer Marcio Schaefer, the shipyard has become synonymous with uncompromising luxury and technological innovations that change the way we spend time at anchor. With over three decades of tradition, Schaefer successfully competes with the most renowned European names.",
+  "post2_h2_1": "Beach Club Revolution and Hydraulic Balconies",
+  "post2_p2": "What has made Schaefer recognizable worldwide are its smart cockpit solutions. Their mid-range models brought a revolution with hydraulic side balconies – at the press of a button, the sides of the boat lower and transform the stern area into a massive private beach club. The systems are engineered and tested in extreme conditions to ensure connections remain 100% watertight while navigating rough waves, providing maximum safety alongside unprecedented comfort.",
+  "post2_h2_2": "Vacuum Infusion and Complete Production Independence",
+  "post2_p3": "Schaefer controls absolutely every detail within its modern factory. Hulls are produced using an advanced fiberglass vacuum infusion process, achieving minimal weight combined with maximum structural strength. Inside the shipyard, there are dedicated facilities for precision woodworking and upholstery workshops. All interior components are designed to withstand years of sun and salt exposure, maintaining the premium look and fine texture of luxury furniture.",
+  "post2_strong_conclusion": "EMPHASIS ON PERFORMANCE:",
+  "post2_p4": "Working closely with Volvo Penta, Schaefer optimizes its hulls for IPS propulsion systems. This ensures incredibly smooth cruising, sporty handling via joystick, and significantly lower fuel consumption for these large yachts.",
+
+    "post3_meta_title": "Outboard vs. Inboard Engines: Which One to Choose? | Blog",
+  "post3_meta_desc": "Find out why modern outboard engines have become the standard on family cruisers. We bring you three key reasons: space, maintenance, and performance.",
+  "post3_meta_keywords": "outboard engines, inboard engines, boats for sale, yachting tips, boat maintenance, Yamaha Marine, Mercury Marine",
+  
+  "blog_date_3": "July 28, 2026",
+  "blog_tag_guide": "Guide",
+  "blog_h3_3": "Outboard vs. Inboard Engines: Which One to Choose for a Modern Cruiser?",
+  "img_alt_b3": "Outboard engines setup",
+  
+  "post3_p1": "When buying a family cruiser or a larger speedboat, one of the biggest dilemmas you will face is the choice of propulsion: should you choose a traditional inboard engine (sterndrive or shaft) or a modern, powerful outboard engine? While a decade ago outboard engines were reserved exclusively for smaller vessels and fishing boats, today technology dictates entirely new rules. Major manufacturers are increasingly designing luxury weekend cruisers precisely around outboard propulsion, and here is why this trend directly benefits buyers.",
+  "post3_h2_1": "1. Space Utilization: You Get an Extra Cabin",
+  "post3_p2": "The biggest and immediately visible advantage of outboard engines is the space inside the boat itself. With classic inboard engines, the engine room takes up a huge, central part of the stern. By moving the engines outside, directly to the transom, a massive amount of space is freed up below deck. Engineers utilize this space in modern vessels to add another spacious aft cabin, a larger head, or a massive storage locker for fenders, gear, and water toys. By buying a boat with an outboard engine, you actually get the comfort of a significantly larger vessel.",
+  "post3_h2_2": "2. Dramatically Easier and Cheaper Maintenance",
+  "post3_p3": "The question of servicing is where outboard engines win hands down. Inboard engines in tight, cramped engine rooms are a nightmare for technicians – every repair takes longer and costs more due to difficult access. With outboard engines, everything is easily accessible. Routine servicing is performed quickly, and if a major breakdown ever occurs, the engine can be completely removed and serviced in a workshop. Also, when the boat is at its berth, you can fully tilt (trim) the outboard engine out of the water. This means no hull fouling with shells, no zinc anodes to constantly change in the water, and no risk of galvanic corrosion destroying the drive.",
+  "post3_h2_3": "3. Weight, Speed, and Modern Comfort",
+  "post3_p4": "Modern generations of outboard engines are built from lighter materials and offer a significantly better power-to-weight ratio than heavy diesel inboard engines. This allows the vessel to plane faster, achieve higher top speeds, and provide a sporty feel at the helm. In terms of noise and vibrations, technology has advanced so much that modern multi-cylinder outboard engines are incomparably quieter when cruising and idling than inboard engines, making time spent in the cockpit far more pleasant.",
+  "post3_p5": "What about the swim platform? A common fear among buyers is that an outboard engine will 'steal' the aft swim platform. Premium modern vessels have solved this problem with ingenious design: the engines are framed by spacious side platforms that extend around them, so you still have unobstructed access to the sea, swim ladders, and easy boarding.",
+  "post3_strong_conclusion": "LOOKING INTO THE FUTURE:",
+  "post3_p6": "Outboard propulsion is no longer a compromise – it has become the standard for modern boaters who want maximum space for their family, sporty performance, and minimal maintenance costs. When choosing your next vessel, be sure to test models that leverage the advantages of this modern configuration.",
+
+    "seo_title_antares620": "Antares 620 - Autonautica",
+  "seo_desc_antares620": "Detailed technical specifications, standard equipment list, and image gallery for Antares 620. Request an official offer.",
+  "antares620_back_link": "&larr; Back to pre-owned vessels",
+  
+  "img_alt_antares620": "Antares 620 main image",
+  "img_alt_antares620_2": "Antares 620 profile view",
+  "img_alt_antares620_3": "Antares 620 on the water",
+  "img_alt_antares620_cock": "Antares 620 cockpit",
+  "img_alt_antares620_stern": "Antares 620 stern view",
+  "img_alt_antares620_fish": "Antares 620 fishing setup",
+  "img_alt_antares620_plat": "Antares 620 swim platform",
+
+  "antares620_price": "Price: €18,400",
+  "antares620_tech_specs": "Technical Specifications",
+  "spec_length": "Length:",
+  "spec_width": "Width:",
+  "spec_engine": "Engine:",
+  "antares620_lbl_fuel": "Engine hours:",
+  
+  "antares620_std_equip": "Equipment",
+  "antares620_eq_1": "Humminbird 597 CI HD, Navman fish 44",
+  "antares620_eq_2": "Compass, wipers, roof hatch in wheelhouse",
+  "antares620_eq_3": "Side sliding windows in wheelhouse",
+  "antares620_eq_4": "Manual bilge pump",
+  "antares620_eq_5": "Self-draining cockpit",
+  "antares620_eq_6": "Dual controls, trolling valve",
+  "antares620_eq_7": "Rod holders",
+  "antares620_eq_8": "Swim ladder",
+  "antares620_eq_9": "Auxiliary engine bracket",
+  "antares620_eq_10": "Anchor roller and anchor",
+  "antares620_eq_11": "Stern storage locker",
+  "antares620_eq_12": "Side decks",
+  "antares620_eq_13": "New decals",
+  "antares620_eq_14": "Antifouling",
+
+  "contact_title": "Contact Us",
+  "contact_desc": "Have questions about our offer or want to arrange a viewing? Feel free to contact us.",
+  "contact_info": "<strong>Address:</strong> Most Raša 8a, HR-52223 Raša<br><strong>Phone:</strong> +385 (0)52 894 6942<br><strong>E-mail:</strong> info@autonautica.hr<br><strong>Opening Hours:</strong> Mon - Fri: 08:00 - 16:00",
+  "footer_quick_links": "Quick Links",
+  "footer_home": "Home",
+  "footer_granfort": "Granfort Vessels",
+  "footer_schaefer": "Schaefer Yachts",
+  "footer_text": "&copy; 2026 Autonautica. All rights reserved.",
+
+    "seo_title_esteou600": "Esteou 600 - Autonautica",
+  "seo_desc_esteou600": "Detailed technical specifications, list of equipment, and image gallery for Esteou 600. Request an official offer.",
+  "esteou600_back_link": "&larr; Back to pre-owned vessels",
+  
+  "img_alt_esteou600": "Esteou 600 main image",
+  "img_alt_esteou600_2": "Esteou 600 profile view",
+  "img_alt_esteou600_3": "Esteou 600 on the water",
+  "img_alt_esteou600_cock": "Esteou 600 cockpit layout",
+  "img_alt_esteou600_stern": "Esteou 600 stern view",
+  "img_alt_esteou600_plat1": "Esteou 600 swim platform close-up",
+  "img_alt_esteou600_plat2": "Esteou 600 aft platform details",
+  "img_alt_esteou600_plat3": "Esteou 600 transom board",
+
+  "esteou600_price": "Price: €10,500",
+  "esteou600_tech_specs": "Technical Specifications",
+  
+  "esteou600_std_equip": "Equipment",
+  "esteou600_eq_1": "Cabin, roof hatch",
+  "esteou600_eq_2": "Fishfinder Striker Vivid 4CV with transom transducer (NEW)",
+  "esteou600_eq_3": "2 Berths",
+  "esteou600_eq_4": "Wheelhouse, roof hatch",
+  "esteou600_eq_5": "Helm seat",
+  "esteou600_eq_6": "Rod holders",
+  "esteou600_eq_7": "External fuel deck fill",
+  "esteou600_eq_8": "Aft seat / storage locker",
+  "esteou600_eq_9": "Self-draining cockpit",
+  "esteou600_eq_10": "Anchor roller and anchor",
+  "esteou600_eq_11": "Bow anchor locker",
+  "esteou600_eq_12": "Side decks",
+  "esteou600_eq_13": "New decals",
+  "esteou600_eq_14": "Antifouling",
+  "esteou600_eq_15": "Platform with swim ladder (NEW)",
+
+    "seo_title_used_catalog": "Pre-Owned Vessels - Autonautica",
+  "seo_desc_used_catalog": "Browse our current selection of pre-owned / used vessels. Detailed specifications, equipment, and certified boats ready for delivery.",
+  
+  "used_brand_title": "Pre-Owned Vessels",
+  "used_brand_desc": "Before placing any pre-owned vessel up for sale, our team performs a complete overhaul, hull polishing, and application of a fresh antifouling layer. This ensures that every boat in our inventory enters the market fully inspected, clean, and prepared for the upcoming season, providing you with a reliable and solid foundation for your time at sea.",
+  
+  "img_alt_used_main": "Pre-owned vessel service preparation",
+  "img_alt_used_sea": "Vessel navigating on the sea",
+  "img_alt_used_bow": "Vessel bow view",
+  
+  "img_alt_used_antares": "Antares 620 pre-owned",
+  "used_antares_engine_text": "Volvo 90 HP, 1500 running hours",
+  "used_spec_year": "Year:",
+  "price_label": "Price:",
+  "btn_more_info": "Find out more",
+  
+  "img_alt_used_esteou": "Esteou 600 pre-owned",
+  "used_esteou_engine_text": "Volkswagen Fenwick 1.6D",
+  "used_spec_power": "Engine power:",
+  
+  "spec_length": "Length",
+  "spec_width": "Width",
+  "spec_engine": "Engine"
+
+
+
+
+
+
 }
+
+
+
 
 
 
